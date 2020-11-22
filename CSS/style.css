@@ -15,6 +15,7 @@ ul{
 
 img {
     display: block;
+    max-height: 800px;
 }
 
 body{
@@ -243,9 +244,12 @@ p .bold {
 
 .workout-list h3 {
     margin: 0; 
-    padding: 30px;
+    padding-top: 30px;
     font-weight: 900;
     color: var(--white-color);
+    font-size: 32px;
+    line-height: 1.06;
+    letter-spacing: -0.006em;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: var(--white-color);
@@ -268,10 +272,6 @@ p .bold {
 
 /* Section lifestyle */
 
-.lifestyle {
-    padding-bottom: 22px;
-}
-
 .lifestyle-list {
     display: flex;
     flex-wrap: wrap;
@@ -281,12 +281,25 @@ p .bold {
 }
 
 .lifestyle-list li{
-    padding-top: 70px;
-    color: var(--white-color);
+    padding: 50px 50px 0 50px;
     width: 480px;
     height: 480px;
-    font-weight: 900;
     text-align: center;
+}
+
+.lifestyle-list h3{
+    margin: 0; 
+    padding: 30px 100px 0 0;
+
+    color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.06;
+    letter-spacing: -0.006em;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--white-color);
 }
 
 .lifestyle-list li:first-child {
@@ -311,4 +324,198 @@ p .bold {
 
 .lifestyle-list li:last-child {
     background-color: #8F00FF;
+}
+
+/* Plans */
+
+.plans {
+    /* padding: 77px; */
+    margin: 0;
+}
+
+.plans-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+.plans-list li {
+    width: 300px;
+    padding: 77px 77px 37px 105px;
+    flex-basis: calc((100%-210) / 3);
+}
+
+.plans-list h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.78;
+    letter-spacing: -0.03em;
+}
+
+.plans-list p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.03em;}
+
+    /* fact */
+
+.fact{
+    display: flex;
+}
+
+.fact-description {
+    padding: 103px 175px 42px 106px;
+}
+
+.fact h2 {
+    margin-top: 0;
+    margin-bottom: 225px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.75;
+    letter-spacing: 0.06em;
+}
+
+.fact-description p {
+    margin-top: 0;
+    margin-bottom: 150px;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.47;
+    letter-spacing: -0.01em;
+}
+
+.logo-fact {
+    color: var(--logo-color);
+}
+
+.fact-description a {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.44;
+    letter-spacing: 0.1em;
+}
+
+.assessment {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #22356F;
+}
+
+.assessment-description {
+    padding: 100px 200px 40px 170px;
+    color: var(--white-color);
+}
+
+.assessment-description a {
+    margin-bottom: 0;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.44;
+    letter-spacing: 0.1em;
+
+}
+.assessment-description a:last-child {
+    color: var(--logo-color);
+}
+
+.assessment-description h2 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.468;
+    letter-spacing: -0.01em;
+}
+
+.assessment-description p {
+    margin-top: 0;
+    margin-bottom: 85px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.47;
+    letter-spacing: -0.005em;
+}
+
+/* Footer */
+footer {
+    display: flex;
+}
+
+.info,
+address,
+.opening-hours {
+    width: 240px;
+    padding-top: 90px;
+}
+
+.info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(34, 53, 111, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.006em;}
+
+footer h3 {
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.785;
+    letter-spacing: -0.006em;}
+
+address ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.street {
+    margin-bottom: 30px;
+}
+
+.street,
+.opening-hours li,
+.mobile a,
+.mail a {
+    font-style: normal;
+    color: rgba(34, 53, 111, 0.5);
+    font-size: 400;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.006em;  
+}
+.mail a {
+    color: var(--logo-color)
+}
+
+.opening-hours ul{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.copyright {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 26px;
+    padding-left: 179px;
+    background-color: var(--logo-color);
+}
+
+.copyright p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 500;
+    color: var(--white-color);
 }
