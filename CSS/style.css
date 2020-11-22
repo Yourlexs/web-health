@@ -1,0 +1,314 @@
+:root{
+    --primary-text-color: #22356F;
+    --primary-background-color: #f4f9e2;
+    --white-color: #FFFFFF;
+    --logo-color: #62D0DF;
+    --accent-color: #FAB63E;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+body{
+    width: 1440px;
+    padding: 0;
+    margin: auto;
+    color: var(--primary-text-color);
+    background-color: var(--white-colorcolor);
+    font-family: 'Karla',sans-serif;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 130px;
+    padding-bottom: 0;
+    padding-left: 170px;
+}
+
+.logo{
+    margin-right: 310px;
+    color: var(--logo-color);
+    font-size: 24px;
+    line-height: 1.13;
+    letter-spacing: -0.035em;
+}
+nav{
+    display: flex;
+}
+
+.nav-list{
+    display: flex;
+    width: 233px;
+    margin: 0;
+    margin-right: 320px;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.nav-list li{
+    padding: 2px;
+    font-weight: 700;
+    width: 400px;
+    font-size: 14px;
+    line-height: 1.14;
+}
+.nav-list li:not(:last-child){
+    margin-right: 30px;
+}
+
+.nav-list li:hover,
+.nav-list li:focus {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary-text-color);
+}
+
+button{
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    color: var(--white-color);
+    background-color: var(--logo-color);
+    font-size: 14px;
+    line-height: 1.14;
+    border: 1px solid transparent;
+    border-radius: 50px; 
+}
+
+button:hover,
+button:focus {
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+}
+
+/* Section Hero */
+
+.hero{
+    display: flex;
+}
+
+.hero-description {
+    margin: 164px 140px 77px 170px;
+    background-color: var(--primary-background-color);
+}
+
+.pictures{
+    width: 640px;
+    height: 765px;
+    background-color: var(--logo-color);
+}
+
+.hero-description .logo {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.hero-description h1 {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 485px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.hero-description p {
+    margin-top: 0;
+    margin-bottom: 60px;
+    width: 485px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.75;
+}
+
+.hero-button a{
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.43;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+}
+
+.hero-button a:not(:last-child) {
+    margin-right: 38px;
+}
+
+.hero-button a:hover,
+.hero-button a:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+}
+
+/* Feature */
+
+.feature{
+    display: flex;
+    color: var(--white-color);
+    background-color: var(--logo-color);
+}
+
+.feature-description{
+    margin: 150px 180px 95px 170px;
+    width: auto;
+}
+
+.feature-description h2 {
+    margin-top: 0;
+    margin-bottom: 75px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 0.75x;
+    letter-spacing: -0.006em;
+}
+
+.feature-description p {
+    margin: 0;
+    width: 555px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+p .bold {
+    font-weight: 700;
+}
+
+/* About us */
+
+.about-us {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    padding: 150px 424px 75px 100px;
+}
+.about-us h2 {
+    margin: 0;
+    width: 95px;
+    margin-right: 225px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.44;
+    letter-spacing: 0.06em;
+}
+
+.about-us p {
+    margin: 0;
+    width: 592px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.42;
+    letter-spacing: 0.005em;
+}
+
+/* Workout */
+
+.workout {
+    margin-bottom: 120px;
+}
+.workout h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.workout-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.workout-list li{
+    padding: 50px 50px 0 50px;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+}
+
+.workout-list h3 {
+    margin: 0; 
+    padding: 30px;
+    font-weight: 900;
+    color: var(--white-color);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--white-color);
+}
+
+.workout-list li:first-child {
+    background-color: #FFE2DE;
+}
+.workout-list li:nth-child(2){
+    background-color: #C4E769;
+}
+
+.workout-list li:nth-child(3){
+    background-color: #62D0DF;
+}
+
+.workout-list li:last-child {
+    background-color:#0052C1;
+}
+
+/* Section lifestyle */
+
+.lifestyle {
+    padding-bottom: 22px;
+}
+
+.lifestyle-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.lifestyle-list li{
+    padding-top: 70px;
+    color: var(--white-color);
+    width: 480px;
+    height: 480px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.lifestyle-list li:first-child {
+    background-color: #22356F;
+} 
+
+.lifestyle-list li:nth-child(2) {
+    background-color: #0052C1;
+}
+
+.lifestyle-list li:nth-child(3) {
+    background-color: rgb(231, 184, 96);
+}
+
+.lifestyle-list li:nth-child(4) {
+    background-color: #62D0DF;
+}
+
+.lifestyle-list li:nth-child(5) {
+    background-color: #DEE1FF;
+}
+
+.lifestyle-list li:last-child {
+    background-color: #8F00FF;
+}

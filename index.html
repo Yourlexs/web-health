@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Thrivetalk</title>
@@ -10,28 +12,40 @@
 <body>
     <header>
         <nav>
-            <a href="/">Thrivetalk</a>
+            <a href="/" class="logo">Thrivetalk</a>
             <ul class="nav-list">
                 <li>Home</li>
                 <li>About</li>
                 <li>Services</li>
                 <li>Blog</li>
             </ul>
-            <button type="button">CONTACT US</button>
         </nav>
+        <button type="button">CONTACT US</button>
     </header>
     <main>
     <!-- Hero -->
     <section class="hero">
-        <a href="/">Thrivetalk</a>
-        <h1>HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
-        <p>Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
-        <a href="">WHO AM I</a>
-        <a href="">WHAT DO I DO</a>
+        <div class="hero-description">
+            <a href="/" class="logo">Thrivetalk</a>
+            <h1>HELPING YOU THRIVE IN ALL AREAS OF LIFE</h1>
+            <p>Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.</p>
+            <div class="hero-button">
+                <a href="">WHO AM I</a>
+                <a href="">WHAT DO I DO</a>
+            </div> 
+        </div>
+        <div class="pictures"></div>
     </section>
     <section class="feature">
-        <h2>Why Thrive?</h2>
-        <p>Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?  Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!</p>
+        <div class="feature-description">
+            <h2>Why Thrive?</h2>
+            <p> 
+                <span class="bold">
+                Want to improve your well-being from the comfort of your own couch? Are you having trouble finding the right therapist?
+                </span>
+            Here at ThriveTalk, our licensed therapists provide the same quality care you would get in office from anywhere you can access your laptop or mobile phone. Become your best self with ThriveTalk.  Start therapy now with a licensed therapist!
+            </p>
+        </div>
         <img src="./images/christopher-campbell-40367.jpg" alt="">
     </section>
     <section class="about-us">
@@ -41,14 +55,14 @@
     <section class="workout">
         <h2>WE CAN HELP YOU WITH</h2>
         <ul class="workout-list">
-            <li>Weight Lifting</li>
-            <li>Running  & Spinning</li>
-            <li>Pumping Iron</li>
-            <li>Pumping Iron</li>
+            <li><h3>Weight Lifting</h3></li>
+            <li><h3>Running  & Spinning</h3></li>
+            <li><h3>Pumping Iron</h3></li>
+            <li><h3>Pumping Iron</h3></li>
         </ul>
     </section>
     <section class="lifestyle">
-        <ul>
+        <ul class="lifestyle-list">
             <li>Physical Health</li>
             <li>Mental Health</li>
             <li>Nutrition</li>
@@ -103,9 +117,11 @@
         </div>
         <address>
             <h3>ENFOLD HEALTH</h3>
-            <p> Main Street 1, Olcott Buffalo, United States</p>
-            <a href="tel:+555 283 784 333">+555 283 784 333</a>
-            <a href="mailto:office@enfold-health.com">office@enfold-health.com</a>
+            <ul>
+                <li>Main Street 1, Olcott Buffalo, United States</li>
+                <li><a href="tel:+555 283 784 333">+555 283 784 333</a></li>
+                <li><a href="mailto:office@enfold-health.com">office@enfold-health.com</a></li>
+            </ul>
         </address>
         <div class="opening-hours">
             <h3>OFFICE HOURS</h3>
