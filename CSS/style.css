@@ -36,6 +36,7 @@ header{
     padding-right: 130px;
     padding-bottom: 0;
     padding-left: 170px;
+    background-color: var(--primary-background-color);
 }
 
 .logo{
@@ -98,11 +99,15 @@ button:focus {
 
 .hero{
     display: flex;
+    background-color: var(--primary-background-color);
+    background-image: url(../images/Mask\ Group.png), url(../images/Rectangle\ 3.1.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .hero-description {
     margin: 164px 140px 77px 170px;
-    background-color: var(--primary-background-color);
+    
 }
 
 .pictures{
@@ -158,6 +163,7 @@ button:focus {
 
 .feature{
     display: flex;
+    justify-content: space-between;
     color: var(--white-color);
     background-color: var(--logo-color);
 }
@@ -243,6 +249,8 @@ p .bold {
 }
 
 .workout-list h3 {
+    display: flex;
+    align-items: center;
     margin: 0; 
     padding-top: 30px;
     font-weight: 900;
@@ -274,6 +282,7 @@ p .bold {
 
 .lifestyle-list {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
@@ -288,6 +297,8 @@ p .bold {
 }
 
 .lifestyle-list h3{
+    display: flex;
+    align-items: center;
     margin: 0; 
     padding: 30px 100px 0 0;
 
@@ -302,6 +313,18 @@ p .bold {
     border-top-color: var(--white-color);
 }
 
+.lifestyle-list h3::before,
+.workout-list h3::before {
+    display: flex;
+    content: "";
+    margin-right: 15px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .lifestyle-list li:first-child {
     background-color: #22356F;
 } 
@@ -311,7 +334,8 @@ p .bold {
 }
 
 .lifestyle-list li:nth-child(3) {
-    background-color: rgb(231, 184, 96);
+    background-color: #76B58B;
+    background-image: url(../images/joanna-kosinska-340748.jpg);
 }
 
 .lifestyle-list li:nth-child(4) {
@@ -366,6 +390,7 @@ p .bold {
 
 .fact{
     display: flex;
+    align-items: flex-end;
 }
 
 .fact-description {
@@ -445,15 +470,21 @@ p .bold {
 }
 
 /* Footer */
-footer {
+footer{
     display: flex;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+    width: 870px;
 }
 
 .info,
 address,
 .opening-hours {
-    width: 240px;
-    padding-top: 90px;
+    width: 200px;
 }
 
 .info p {
@@ -463,7 +494,8 @@ address,
     font-weight: 400;
     font-size: 14px;
     line-height: 1.64;
-    letter-spacing: -0.006em;}
+    letter-spacing: -0.006em;
+}
 
 footer h3 {
     font-style: normal;
@@ -490,7 +522,7 @@ address ul {
 .mail a {
     font-style: normal;
     color: rgba(34, 53, 111, 0.5);
-    font-size: 400;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.64;
     letter-spacing: -0.006em;  
